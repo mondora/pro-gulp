@@ -28,7 +28,7 @@ proGulp.task("task_1", function () {
 });
 
 /*
-*   `proGulp.sequence` gives us the guarantee `task_1` only starts after
+*   `proGulp.sequence` gives us the guarantee `task_0` only starts after
 *   `task_1` has completed
 */
 proGulp.task("tasks", proGulp.sequence(["task_0", "task_1"]), function () {
