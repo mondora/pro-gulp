@@ -1,0 +1,916 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Mochawesome Report Card</title>
+    <link rel="stylesheet" href="css/mochawesome.css">
+  </head>
+  <body>
+    <!-- NAVBAR -->
+    <div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+      <div class="container">
+        <div class="report-info-cnt">
+          <h1 class="report-title">pro-gulp</h1>
+          <h3 class="report-date">Saturday, June 13 2015, 12:20am</h3>
+        </div>
+        <div class="quick-summary-cnt">
+            <ul class="list-unstyled quick-summary">
+              <li class="qs-item summary-duration" title="Duration">469<span>MS</span></li>
+              <li class="qs-item summary-suites" title="Suites">14</li>
+              <li class="qs-item summary-tests" title="Tests">23</li>
+              <li class="qs-item summary-passes" title="Passed" data-filter="passed">23</li>
+              <li class="qs-item summary-failures" title="Failed" data-filter="failed">0</li>
+              <li class="qs-item summary-pending" title="Pending" data-filter="pending">0</li>
+            </ul>        </div>
+      </div>
+    </div>
+
+    <!-- Report Summary -->
+    <div class="summary">
+      <div class="container">
+          <div class="row">
+            <div class="summary-col summary-duration">
+              <h1 class="summary-count">469<span>MS</span></h1>
+              <h4 class="summary-label">MS</h4>
+            </div>
+            <div class="summary-col summary-suites" title="Suites">
+              <h1 class="summary-count">14</h1>
+              <h4 class="summary-label">Suites</h4>
+            </div>
+            <div class="summary-col summary-tests" title="Tests">
+              <h1 class="summary-count">23</h1>
+              <h4 class="summary-label">Tests</h4>
+            </div>
+            <div class="summary-col summary-passes" data-filter="passed" title="Passed">
+              <h1 class="summary-count">23</h1>
+              <h4 class="summary-label">Passed</h4>
+            </div>
+            <div class="summary-col summary-failures" data-filter="failed" title="Failed">
+              <h1 class="summary-count">0</h1>
+              <h4 class="summary-label">Failed</h4>
+            </div>
+            <div class="summary-col summary-pending" data-filter="pending" title="Pending">
+              <h1 class="summary-count">0</h1>
+              <h4 class="summary-label">Pending</h4>
+            </div>
+          </div>      </div>
+    </div>
+    <div class="statusbar">
+      <div class="container">
+          <div class="row">
+            <div class="status-item status-item-pending-pct">0% Pending</div>
+            <div class="status-item status-item-passing-pct success">100% Passing</div>
+          </div>      </div>
+    </div>
+
+    <!-- Suites -->
+    <div class="details container">
+            <section class="suite-wrap">
+          <div id="63bd55c3-4ea7-4c4f-93e9-85a9ebf5f24a" class="suite has-tests has-passed">
+            <h3 class="suite-title">The &#x60;task&#x60; method</h3>
+            <h5 class="suite-filename">/test/pro-gulp.js</h5>
+            <!-- Suite Chart -->
+            <div class="suite-chart-wrap">
+              <canvas id="63bd55c3-4ea7-4c4f-93e9-85a9ebf5f24a" class="suite-chart" width="50" height="50" data-total-passes="2" data-total-failures="0" data-total-pending="0" data-total-skipped="0"></canvas>
+            </div>
+            <div class="suite-data-wrap">
+              <!-- Suite Summary -->
+              <ul class="suite-summary list-unstyled">
+                <li class="suite-summary-item duration">2 ms</li>
+                <li class="suite-summary-item tests">2</li>
+                <li class="suite-summary-item passed">2</li>
+                <li class="suite-summary-item failed">0</li>
+                <li class="suite-summary-item pending">0</li>
+              </ul>
+              <!-- Test Info -->
+              <div class="suite-test-wrap">
+                <div class="suite-test-header" data-toggle="collapse" data-target="#63bd55c3-4ea7-4c4f-93e9-85a9ebf5f24a-test-list">
+                  <h4 class="suite-test-header-title">Tests</h4>
+                </div>
+                <div id="63bd55c3-4ea7-4c4f-93e9-85a9ebf5f24a-test-list" class="list-group test-list collapse in">
+                    <div id="49919f8e-aa31-40d6-af50-5c22cba3aa26" class="list-group-item test passed">
+          <!-- Test Heading -->
+          <div class="test-heading">
+            <h4 class="test-title">
+              <span class="text-muted hidden"> it </span>
+              should behave _like_ a getter when called with only one argument
+            </h4>
+            <div class="pull-right">
+              <button class="btn btn-link btn-sm toggle-btn toggle-code collapsed" data-toggle="collapse" data-target="#49919f8e-aa31-40d6-af50-5c22cba3aa26 > .test-code.collapse">Code</button>
+              <span class="test-duration fast">1 ms</span>
+            </div>
+          </div>
+          <!-- Test Errors -->
+          <!-- Test Code -->
+          <div class="test-code collapse">
+            <pre><code class="hljs javascript small"><span class="hljs-keyword">var</span> tasks = {<br>    name: <span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params"></span>) </span>{}<br>};<br>proGulp.__set__(<span class="hljs-string">"tasks"</span>, tasks);<br>proGulp.task(<span class="hljs-string">"name"</span>).should.equal(tasks.name);</code></pre>
+          </div>
+          <!-- Test Error Stack -->
+        </div>            <div id="c68b8022-9b10-43dd-ac4e-87d7aaf3fbc2" class="list-group-item test passed">
+          <!-- Test Heading -->
+          <div class="test-heading">
+            <h4 class="test-title">
+              <span class="text-muted hidden"> it </span>
+              should behave _like_ a setter when called with more than one argument
+            </h4>
+            <div class="pull-right">
+              <button class="btn btn-link btn-sm toggle-btn toggle-code collapsed" data-toggle="collapse" data-target="#c68b8022-9b10-43dd-ac4e-87d7aaf3fbc2 > .test-code.collapse">Code</button>
+              <span class="test-duration fast">1 ms</span>
+            </div>
+          </div>
+          <!-- Test Errors -->
+          <!-- Test Code -->
+          <div class="test-code collapse">
+            <pre><code class="hljs javascript small">proGulp.task(<span class="hljs-string">"name"</span>, <span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params"></span>) </span>{});<br>proGulp.task(<span class="hljs-string">"name"</span>).should.be.of.type(<span class="hljs-string">"function"</span>);</code></pre>
+          </div>
+          <!-- Test Error Stack -->
+        </div>        </div>
+              </div>
+            </div>
+        
+        
+          </div>
+        </section>
+            <section class="suite-wrap">
+          <div id="f6bc25a5-596a-4a49-9919-bb823f979562" class="suite has-tests has-passed">
+            <h3 class="suite-title">The function returned by the &#x60;task&#x60; method</h3>
+            <h5 class="suite-filename">/test/pro-gulp.js</h5>
+            <!-- Suite Chart -->
+            <div class="suite-chart-wrap">
+              <canvas id="f6bc25a5-596a-4a49-9919-bb823f979562" class="suite-chart" width="50" height="50" data-total-passes="3" data-total-failures="0" data-total-pending="0" data-total-skipped="0"></canvas>
+            </div>
+            <div class="suite-data-wrap">
+              <!-- Suite Summary -->
+              <ul class="suite-summary list-unstyled">
+                <li class="suite-summary-item duration">5 ms</li>
+                <li class="suite-summary-item tests">3</li>
+                <li class="suite-summary-item passed">3</li>
+                <li class="suite-summary-item failed">0</li>
+                <li class="suite-summary-item pending">0</li>
+              </ul>
+              <!-- Test Info -->
+              <div class="suite-test-wrap">
+                <div class="suite-test-header" data-toggle="collapse" data-target="#f6bc25a5-596a-4a49-9919-bb823f979562-test-list">
+                  <h4 class="suite-test-header-title">Tests</h4>
+                </div>
+                <div id="f6bc25a5-596a-4a49-9919-bb823f979562-test-list" class="list-group test-list collapse in">
+                    <div id="ff86fd3d-e823-45eb-8f86-93a4a89a0b2a" class="list-group-item test passed">
+          <!-- Test Heading -->
+          <div class="test-heading">
+            <h4 class="test-title">
+              <span class="text-muted hidden"> it </span>
+              should return a promise
+            </h4>
+            <div class="pull-right">
+              <button class="btn btn-link btn-sm toggle-btn toggle-code collapsed" data-toggle="collapse" data-target="#ff86fd3d-e823-45eb-8f86-93a4a89a0b2a > .test-code.collapse">Code</button>
+              <span class="test-duration fast">2 ms</span>
+            </div>
+          </div>
+          <!-- Test Errors -->
+          <!-- Test Code -->
+          <div class="test-code collapse">
+            <pre><code class="hljs javascript small">proGulp.task(<span class="hljs-string">"name"</span>, <span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params"></span>) </span>{});<br>proGulp.task(<span class="hljs-string">"name"</span>)().should.be.a.Promise;</code></pre>
+          </div>
+          <!-- Test Error Stack -->
+        </div>            <div id="ab3a0140-6197-4fd1-a1c7-2d07ade01c9d" class="list-group-item test passed">
+          <!-- Test Heading -->
+          <div class="test-heading">
+            <h4 class="test-title">
+              <span class="text-muted hidden"> it </span>
+              should call the function(s) passed as second (and third) argument [1 function]
+            </h4>
+            <div class="pull-right">
+              <button class="btn btn-link btn-sm toggle-btn toggle-code collapsed" data-toggle="collapse" data-target="#ab3a0140-6197-4fd1-a1c7-2d07ade01c9d > .test-code.collapse">Code</button>
+              <span class="test-duration fast">2 ms</span>
+            </div>
+          </div>
+          <!-- Test Errors -->
+          <!-- Test Code -->
+          <div class="test-code collapse">
+            <pre><code class="hljs javascript small"><span class="hljs-keyword">var</span> spy_0 = sinon.spy();<br>proGulp.task(<span class="hljs-string">"name"</span>, spy_0);<br><span class="hljs-keyword">return</span> proGulp.task(<span class="hljs-string">"name"</span>)().then(<span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params"></span>) </span>{<br>    spy_0.called.should.equal(<span class="hljs-literal">true</span>);<br>});</code></pre>
+          </div>
+          <!-- Test Error Stack -->
+        </div>            <div id="b5e7012c-fa57-4759-bf38-dd3b78b3a03f" class="list-group-item test passed">
+          <!-- Test Heading -->
+          <div class="test-heading">
+            <h4 class="test-title">
+              <span class="text-muted hidden"> it </span>
+              should call the function(s) passed as second (and third) argument [2 functions]
+            </h4>
+            <div class="pull-right">
+              <button class="btn btn-link btn-sm toggle-btn toggle-code collapsed" data-toggle="collapse" data-target="#b5e7012c-fa57-4759-bf38-dd3b78b3a03f > .test-code.collapse">Code</button>
+              <span class="test-duration fast">1 ms</span>
+            </div>
+          </div>
+          <!-- Test Errors -->
+          <!-- Test Code -->
+          <div class="test-code collapse">
+            <pre><code class="hljs javascript small"><span class="hljs-keyword">var</span> spy_0 = sinon.spy();<br><span class="hljs-keyword">var</span> spy_1 = sinon.spy();<br>proGulp.task(<span class="hljs-string">"name"</span>, spy_0, spy_1);<br><span class="hljs-keyword">return</span> proGulp.task(<span class="hljs-string">"name"</span>)().then(<span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params"></span>) </span>{<br>    spy_0.called.should.equal(<span class="hljs-literal">true</span>);<br>    spy_1.called.should.equal(<span class="hljs-literal">true</span>);<br>});</code></pre>
+          </div>
+          <!-- Test Error Stack -->
+        </div>        </div>
+              </div>
+            </div>
+        
+        
+          </div>
+        </section>
+            <section class="suite-wrap">
+          <div id="f23b3827-7f1b-413b-a8d8-1849aa86b308" class="suite has-tests has-passed">
+            <h3 class="suite-title">The &#x60;parallel&#x60; method</h3>
+            <h5 class="suite-filename">/test/pro-gulp.js</h5>
+            <!-- Suite Chart -->
+            <div class="suite-chart-wrap">
+              <canvas id="f23b3827-7f1b-413b-a8d8-1849aa86b308" class="suite-chart" width="50" height="50" data-total-passes="1" data-total-failures="0" data-total-pending="0" data-total-skipped="0"></canvas>
+            </div>
+            <div class="suite-data-wrap">
+              <!-- Suite Summary -->
+              <ul class="suite-summary list-unstyled">
+                <li class="suite-summary-item duration">0 ms</li>
+                <li class="suite-summary-item tests">1</li>
+                <li class="suite-summary-item passed">1</li>
+                <li class="suite-summary-item failed">0</li>
+                <li class="suite-summary-item pending">0</li>
+              </ul>
+              <!-- Test Info -->
+              <div class="suite-test-wrap">
+                <div class="suite-test-header" data-toggle="collapse" data-target="#f23b3827-7f1b-413b-a8d8-1849aa86b308-test-list">
+                  <h4 class="suite-test-header-title">Tests</h4>
+                </div>
+                <div id="f23b3827-7f1b-413b-a8d8-1849aa86b308-test-list" class="list-group test-list collapse in">
+                    <div id="155606c3-946a-4872-8327-376c9a0643a9" class="list-group-item test passed">
+          <!-- Test Heading -->
+          <div class="test-heading">
+            <h4 class="test-title">
+              <span class="text-muted hidden"> it </span>
+              should return a function
+            </h4>
+            <div class="pull-right">
+              <button class="btn btn-link btn-sm toggle-btn toggle-code collapsed" data-toggle="collapse" data-target="#155606c3-946a-4872-8327-376c9a0643a9 > .test-code.collapse">Code</button>
+              <span class="test-duration fast">0 ms</span>
+            </div>
+          </div>
+          <!-- Test Errors -->
+          <!-- Test Code -->
+          <div class="test-code collapse">
+            <pre><code class="hljs javascript small"><span class="hljs-keyword">var</span> ret = proGulp.parallel();<br>ret.should.be.of.type(<span class="hljs-string">"function"</span>);</code></pre>
+          </div>
+          <!-- Test Error Stack -->
+        </div>        </div>
+              </div>
+            </div>
+        
+        
+          </div>
+        </section>
+            <section class="suite-wrap">
+          <div id="506b8f2a-8907-4392-ba63-ff9a8a8bbd7b" class="suite has-tests has-passed">
+            <h3 class="suite-title">The function returned by the &#x60;parallel&#x60; method</h3>
+            <h5 class="suite-filename">/test/pro-gulp.js</h5>
+            <!-- Suite Chart -->
+            <div class="suite-chart-wrap">
+              <canvas id="506b8f2a-8907-4392-ba63-ff9a8a8bbd7b" class="suite-chart" width="50" height="50" data-total-passes="2" data-total-failures="0" data-total-pending="0" data-total-skipped="0"></canvas>
+            </div>
+            <div class="suite-data-wrap">
+              <!-- Suite Summary -->
+              <ul class="suite-summary list-unstyled">
+                <li class="suite-summary-item duration">1 ms</li>
+                <li class="suite-summary-item tests">2</li>
+                <li class="suite-summary-item passed">2</li>
+                <li class="suite-summary-item failed">0</li>
+                <li class="suite-summary-item pending">0</li>
+              </ul>
+              <!-- Test Info -->
+              <div class="suite-test-wrap">
+                <div class="suite-test-header" data-toggle="collapse" data-target="#506b8f2a-8907-4392-ba63-ff9a8a8bbd7b-test-list">
+                  <h4 class="suite-test-header-title">Tests</h4>
+                </div>
+                <div id="506b8f2a-8907-4392-ba63-ff9a8a8bbd7b-test-list" class="list-group test-list collapse in">
+                    <div id="db13da03-8aa3-4765-8dbe-b1bf55ee09e0" class="list-group-item test passed">
+          <!-- Test Heading -->
+          <div class="test-heading">
+            <h4 class="test-title">
+              <span class="text-muted hidden"> it </span>
+              should return a promise
+            </h4>
+            <div class="pull-right">
+              <button class="btn btn-link btn-sm toggle-btn toggle-code collapsed" data-toggle="collapse" data-target="#db13da03-8aa3-4765-8dbe-b1bf55ee09e0 > .test-code.collapse">Code</button>
+              <span class="test-duration fast">0 ms</span>
+            </div>
+          </div>
+          <!-- Test Errors -->
+          <!-- Test Code -->
+          <div class="test-code collapse">
+            <pre><code class="hljs javascript small"><span class="hljs-keyword">var</span> ret = proGulp.parallel([]);<br>ret().should.be.a.Promise;</code></pre>
+          </div>
+          <!-- Test Error Stack -->
+        </div>            <div id="7efc9aee-1ff6-4edf-a5f1-28c00343c2be" class="list-group-item test passed">
+          <!-- Test Heading -->
+          <div class="test-heading">
+            <h4 class="test-title">
+              <span class="text-muted hidden"> it </span>
+              should execute tasks in parallel (order does not matter)
+            </h4>
+            <div class="pull-right">
+              <button class="btn btn-link btn-sm toggle-btn toggle-code collapsed" data-toggle="collapse" data-target="#7efc9aee-1ff6-4edf-a5f1-28c00343c2be > .test-code.collapse">Code</button>
+              <span class="test-duration fast">1 ms</span>
+            </div>
+          </div>
+          <!-- Test Errors -->
+          <!-- Test Code -->
+          <div class="test-code collapse">
+            <pre><code class="hljs javascript small"><span class="hljs-keyword">var</span> spy = sinon.spy();<br>proGulp.task(<span class="hljs-string">"task_0"</span>, spy);<br>proGulp.task(<span class="hljs-string">"task_1"</span>, spy);<br><span class="hljs-keyword">var</span> ret = proGulp.parallel([<span class="hljs-string">"task_0"</span>, <span class="hljs-string">"task_1"</span>]);<br><span class="hljs-keyword">return</span> ret().then(<span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params"></span>) </span>{<br>    spy.calledTwice.should.equal(<span class="hljs-literal">true</span>);<br>});</code></pre>
+          </div>
+          <!-- Test Error Stack -->
+        </div>        </div>
+              </div>
+            </div>
+        
+        
+          </div>
+        </section>
+            <section class="suite-wrap">
+          <div id="43b43938-48c5-49f2-b7d0-758cd8c51e9b" class="suite has-tests has-passed">
+            <h3 class="suite-title">The &#x60;sequence&#x60; method</h3>
+            <h5 class="suite-filename">/test/pro-gulp.js</h5>
+            <!-- Suite Chart -->
+            <div class="suite-chart-wrap">
+              <canvas id="43b43938-48c5-49f2-b7d0-758cd8c51e9b" class="suite-chart" width="50" height="50" data-total-passes="1" data-total-failures="0" data-total-pending="0" data-total-skipped="0"></canvas>
+            </div>
+            <div class="suite-data-wrap">
+              <!-- Suite Summary -->
+              <ul class="suite-summary list-unstyled">
+                <li class="suite-summary-item duration">0 ms</li>
+                <li class="suite-summary-item tests">1</li>
+                <li class="suite-summary-item passed">1</li>
+                <li class="suite-summary-item failed">0</li>
+                <li class="suite-summary-item pending">0</li>
+              </ul>
+              <!-- Test Info -->
+              <div class="suite-test-wrap">
+                <div class="suite-test-header" data-toggle="collapse" data-target="#43b43938-48c5-49f2-b7d0-758cd8c51e9b-test-list">
+                  <h4 class="suite-test-header-title">Tests</h4>
+                </div>
+                <div id="43b43938-48c5-49f2-b7d0-758cd8c51e9b-test-list" class="list-group test-list collapse in">
+                    <div id="0c1b8801-8747-4d03-a155-e24462d7f765" class="list-group-item test passed">
+          <!-- Test Heading -->
+          <div class="test-heading">
+            <h4 class="test-title">
+              <span class="text-muted hidden"> it </span>
+              should return a function
+            </h4>
+            <div class="pull-right">
+              <button class="btn btn-link btn-sm toggle-btn toggle-code collapsed" data-toggle="collapse" data-target="#0c1b8801-8747-4d03-a155-e24462d7f765 > .test-code.collapse">Code</button>
+              <span class="test-duration fast">0 ms</span>
+            </div>
+          </div>
+          <!-- Test Errors -->
+          <!-- Test Code -->
+          <div class="test-code collapse">
+            <pre><code class="hljs javascript small"><span class="hljs-keyword">var</span> ret = proGulp.sequence();<br>ret.should.be.of.type(<span class="hljs-string">"function"</span>);</code></pre>
+          </div>
+          <!-- Test Error Stack -->
+        </div>        </div>
+              </div>
+            </div>
+        
+        
+          </div>
+        </section>
+            <section class="suite-wrap">
+          <div id="7fa7156d-969c-43b9-82f8-2cd62631d241" class="suite has-tests has-passed">
+            <h3 class="suite-title">The function returned by the &#x60;sequence&#x60; method</h3>
+            <h5 class="suite-filename">/test/pro-gulp.js</h5>
+            <!-- Suite Chart -->
+            <div class="suite-chart-wrap">
+              <canvas id="7fa7156d-969c-43b9-82f8-2cd62631d241" class="suite-chart" width="50" height="50" data-total-passes="2" data-total-failures="0" data-total-pending="0" data-total-skipped="0"></canvas>
+            </div>
+            <div class="suite-data-wrap">
+              <!-- Suite Summary -->
+              <ul class="suite-summary list-unstyled">
+                <li class="suite-summary-item duration">423 ms</li>
+                <li class="suite-summary-item tests">2</li>
+                <li class="suite-summary-item passed">2</li>
+                <li class="suite-summary-item failed">0</li>
+                <li class="suite-summary-item pending">0</li>
+              </ul>
+              <!-- Test Info -->
+              <div class="suite-test-wrap">
+                <div class="suite-test-header" data-toggle="collapse" data-target="#7fa7156d-969c-43b9-82f8-2cd62631d241-test-list">
+                  <h4 class="suite-test-header-title">Tests</h4>
+                </div>
+                <div id="7fa7156d-969c-43b9-82f8-2cd62631d241-test-list" class="list-group test-list collapse in">
+                    <div id="7d1428ef-ffd2-4bc5-a506-058a33cc6de2" class="list-group-item test passed">
+          <!-- Test Heading -->
+          <div class="test-heading">
+            <h4 class="test-title">
+              <span class="text-muted hidden"> it </span>
+              should return a promise
+            </h4>
+            <div class="pull-right">
+              <button class="btn btn-link btn-sm toggle-btn toggle-code collapsed" data-toggle="collapse" data-target="#7d1428ef-ffd2-4bc5-a506-058a33cc6de2 > .test-code.collapse">Code</button>
+              <span class="test-duration fast">0 ms</span>
+            </div>
+          </div>
+          <!-- Test Errors -->
+          <!-- Test Code -->
+          <div class="test-code collapse">
+            <pre><code class="hljs javascript small"><span class="hljs-keyword">var</span> ret = proGulp.sequence([]);<br>ret().should.be.a.Promise;</code></pre>
+          </div>
+          <!-- Test Error Stack -->
+        </div>            <div id="6274ce3e-624f-4f8e-99f0-3908c805c845" class="list-group-item test passed">
+          <!-- Test Heading -->
+          <div class="test-heading">
+            <h4 class="test-title">
+              <span class="text-muted hidden"> it </span>
+              should execute tasks in sequence (order does matter)
+            </h4>
+            <div class="pull-right">
+              <button class="btn btn-link btn-sm toggle-btn toggle-code collapsed" data-toggle="collapse" data-target="#6274ce3e-624f-4f8e-99f0-3908c805c845 > .test-code.collapse">Code</button>
+              <span class="test-duration slow">423 ms</span>
+            </div>
+          </div>
+          <!-- Test Errors -->
+          <!-- Test Code -->
+          <div class="test-code collapse">
+            <pre><code class="hljs javascript small"><span class="hljs-keyword">var</span> spies = [];<br><span class="hljs-keyword">var</span> getTime = <span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params"></span>) </span>{<br>    <span class="hljs-keyword">var</span> timestamp = process.hrtime();<br>    <span class="hljs-keyword">return</span> timestamp[<span class="hljs-number">0</span>] * <span class="hljs-number">1e9</span> + timestamp[<span class="hljs-number">1</span>];<br>};<br><span class="hljs-keyword">var</span> createSpy = <span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params">n</span>) </span>{<br>    spies[n] = {};<br>    spies[n].fn = sinon.spy(<span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params"></span>) </span>{<br>        spies[n].start = getTime();<br>        <span class="hljs-keyword">return</span> BPromise.delay(<span class="hljs-number">100</span>).then(<span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params"></span>) </span>{<br>            spies[n].end = getTime();<br>        });<br>    });<br>};<br>createSpy(<span class="hljs-number">0</span>);<br>createSpy(<span class="hljs-number">1</span>);<br>createSpy(<span class="hljs-number">2</span>);<br>createSpy(<span class="hljs-number">3</span>);<br>proGulp.task(<span class="hljs-string">"task_0"</span>, spies[<span class="hljs-number">0</span>].fn);<br>proGulp.task(<span class="hljs-string">"task_1"</span>, spies[<span class="hljs-number">1</span>].fn);<br>proGulp.task(<span class="hljs-string">"task_2"</span>, spies[<span class="hljs-number">2</span>].fn);<br>proGulp.task(<span class="hljs-string">"task_3"</span>, spies[<span class="hljs-number">3</span>].fn);<br><span class="hljs-keyword">var</span> ret = proGulp.sequence([<br>    <span class="hljs-string">"task_0"</span>,<br>    <span class="hljs-string">"task_1"</span>,<br>    <span class="hljs-string">"task_2"</span>,<br>    <span class="hljs-string">"task_3"</span><br>]);<br><span class="hljs-keyword">return</span> ret().then(<span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params"></span>) </span>{<br>    <span class="hljs-comment">// Check they have been called</span><br>    spies[<span class="hljs-number">0</span>].fn.called.should.equal(<span class="hljs-literal">true</span>);<br>    spies[<span class="hljs-number">1</span>].fn.called.should.equal(<span class="hljs-literal">true</span>);<br>    spies[<span class="hljs-number">2</span>].fn.called.should.equal(<span class="hljs-literal">true</span>);<br>    spies[<span class="hljs-number">3</span>].fn.called.should.equal(<span class="hljs-literal">true</span>);<br>    <span class="hljs-comment">// Check they have been called in the right order</span><br>    (spies[<span class="hljs-number">0</span>].start &lt; spies[<span class="hljs-number">0</span>].end).should.equal(<span class="hljs-literal">true</span>);<br>    (spies[<span class="hljs-number">0</span>].end &lt; spies[<span class="hljs-number">1</span>].start).should.equal(<span class="hljs-literal">true</span>);<br>    (spies[<span class="hljs-number">1</span>].start &lt; spies[<span class="hljs-number">1</span>].end).should.equal(<span class="hljs-literal">true</span>);<br>    (spies[<span class="hljs-number">1</span>].end &lt; spies[<span class="hljs-number">2</span>].start).should.equal(<span class="hljs-literal">true</span>);<br>    (spies[<span class="hljs-number">2</span>].start &lt; spies[<span class="hljs-number">2</span>].end).should.equal(<span class="hljs-literal">true</span>);<br>    (spies[<span class="hljs-number">2</span>].end &lt; spies[<span class="hljs-number">3</span>].start).should.equal(<span class="hljs-literal">true</span>);<br>    (spies[<span class="hljs-number">3</span>].start &lt; spies[<span class="hljs-number">3</span>].end).should.equal(<span class="hljs-literal">true</span>);<br>});</code></pre>
+          </div>
+          <!-- Test Error Stack -->
+        </div>        </div>
+              </div>
+            </div>
+        
+        
+          </div>
+        </section>
+            <section class="suite-wrap">
+          <div id="e56633ae-3007-4cdf-bb2c-f4b5c18c3924" class="suite has-tests has-passed">
+            <h3 class="suite-title">The &#x60;log.start&#x60; function</h3>
+            <h5 class="suite-filename">/test/lib/log.js</h5>
+            <!-- Suite Chart -->
+            <div class="suite-chart-wrap">
+              <canvas id="e56633ae-3007-4cdf-bb2c-f4b5c18c3924" class="suite-chart" width="50" height="50" data-total-passes="2" data-total-failures="0" data-total-pending="0" data-total-skipped="0"></canvas>
+            </div>
+            <div class="suite-data-wrap">
+              <!-- Suite Summary -->
+              <ul class="suite-summary list-unstyled">
+                <li class="suite-summary-item duration">1 ms</li>
+                <li class="suite-summary-item tests">2</li>
+                <li class="suite-summary-item passed">2</li>
+                <li class="suite-summary-item failed">0</li>
+                <li class="suite-summary-item pending">0</li>
+              </ul>
+              <!-- Test Info -->
+              <div class="suite-test-wrap">
+                <div class="suite-test-header" data-toggle="collapse" data-target="#e56633ae-3007-4cdf-bb2c-f4b5c18c3924-test-list">
+                  <h4 class="suite-test-header-title">Tests</h4>
+                </div>
+                <div id="e56633ae-3007-4cdf-bb2c-f4b5c18c3924-test-list" class="list-group test-list collapse in">
+                    <div id="64648d58-6abc-4da4-9b20-f25a5cc5416d" class="list-group-item test passed">
+          <!-- Test Heading -->
+          <div class="test-heading">
+            <h4 class="test-title">
+              <span class="text-muted hidden"> it </span>
+              should attach a Date object to the property &#x60;start&#x60; of its context
+            </h4>
+            <div class="pull-right">
+              <button class="btn btn-link btn-sm toggle-btn toggle-code collapsed" data-toggle="collapse" data-target="#64648d58-6abc-4da4-9b20-f25a5cc5416d > .test-code.collapse">Code</button>
+              <span class="test-duration fast">1 ms</span>
+            </div>
+          </div>
+          <!-- Test Errors -->
+          <!-- Test Code -->
+          <div class="test-code collapse">
+            <pre><code class="hljs javascript small"><span class="hljs-keyword">var</span> ctx = {};<br>log.start.call(ctx);<br>ctx.start.should.be.instanceOf(<span class="hljs-built_in">Date</span>);</code></pre>
+          </div>
+          <!-- Test Error Stack -->
+        </div>            <div id="d8c4f3d0-ecab-4858-96b2-0c0dc11a7ffb" class="list-group-item test passed">
+          <!-- Test Heading -->
+          <div class="test-heading">
+            <h4 class="test-title">
+              <span class="text-muted hidden"> it </span>
+              should call the &#x60;gulp-util.log&#x60; function
+            </h4>
+            <div class="pull-right">
+              <button class="btn btn-link btn-sm toggle-btn toggle-code collapsed" data-toggle="collapse" data-target="#d8c4f3d0-ecab-4858-96b2-0c0dc11a7ffb > .test-code.collapse">Code</button>
+              <span class="test-duration fast">0 ms</span>
+            </div>
+          </div>
+          <!-- Test Errors -->
+          <!-- Test Code -->
+          <div class="test-code collapse">
+            <pre><code class="hljs javascript small">log.start.call({});<br>util.log.calledWithMatch(<span class="hljs-regexp">/Starting/</span>).should.equal(<span class="hljs-literal">true</span>);</code></pre>
+          </div>
+          <!-- Test Error Stack -->
+        </div>        </div>
+              </div>
+            </div>
+        
+        
+          </div>
+        </section>
+            <section class="suite-wrap">
+          <div id="0bee28ce-9ae1-40ca-b1ae-f76d9c9bcf01" class="suite has-tests has-passed">
+            <h3 class="suite-title">The &#x60;log.end&#x60; function</h3>
+            <h5 class="suite-filename">/test/lib/log.js</h5>
+            <!-- Suite Chart -->
+            <div class="suite-chart-wrap">
+              <canvas id="0bee28ce-9ae1-40ca-b1ae-f76d9c9bcf01" class="suite-chart" width="50" height="50" data-total-passes="2" data-total-failures="0" data-total-pending="0" data-total-skipped="0"></canvas>
+            </div>
+            <div class="suite-data-wrap">
+              <!-- Suite Summary -->
+              <ul class="suite-summary list-unstyled">
+                <li class="suite-summary-item duration">0 ms</li>
+                <li class="suite-summary-item tests">2</li>
+                <li class="suite-summary-item passed">2</li>
+                <li class="suite-summary-item failed">0</li>
+                <li class="suite-summary-item pending">0</li>
+              </ul>
+              <!-- Test Info -->
+              <div class="suite-test-wrap">
+                <div class="suite-test-header" data-toggle="collapse" data-target="#0bee28ce-9ae1-40ca-b1ae-f76d9c9bcf01-test-list">
+                  <h4 class="suite-test-header-title">Tests</h4>
+                </div>
+                <div id="0bee28ce-9ae1-40ca-b1ae-f76d9c9bcf01-test-list" class="list-group test-list collapse in">
+                    <div id="63f5337f-62ad-499a-9ec7-1c329c21835a" class="list-group-item test passed">
+          <!-- Test Heading -->
+          <div class="test-heading">
+            <h4 class="test-title">
+              <span class="text-muted hidden"> it </span>
+              should attach a Date object to the property &#x60;end&#x60; of its context
+            </h4>
+            <div class="pull-right">
+              <button class="btn btn-link btn-sm toggle-btn toggle-code collapsed" data-toggle="collapse" data-target="#63f5337f-62ad-499a-9ec7-1c329c21835a > .test-code.collapse">Code</button>
+              <span class="test-duration fast">0 ms</span>
+            </div>
+          </div>
+          <!-- Test Errors -->
+          <!-- Test Code -->
+          <div class="test-code collapse">
+            <pre><code class="hljs javascript small"><span class="hljs-keyword">var</span> ctx = {<br>    start: <span class="hljs-keyword">new</span> <span class="hljs-built_in">Date</span>()<br>};<br>log.end.call(ctx);<br>ctx.end.should.be.instanceOf(<span class="hljs-built_in">Date</span>);</code></pre>
+          </div>
+          <!-- Test Error Stack -->
+        </div>            <div id="97f913c4-e461-408b-8ff3-d1569f72109a" class="list-group-item test passed">
+          <!-- Test Heading -->
+          <div class="test-heading">
+            <h4 class="test-title">
+              <span class="text-muted hidden"> it </span>
+              should call the &#x60;gulp-util.log&#x60; function
+            </h4>
+            <div class="pull-right">
+              <button class="btn btn-link btn-sm toggle-btn toggle-code collapsed" data-toggle="collapse" data-target="#97f913c4-e461-408b-8ff3-d1569f72109a > .test-code.collapse">Code</button>
+              <span class="test-duration fast">0 ms</span>
+            </div>
+          </div>
+          <!-- Test Errors -->
+          <!-- Test Code -->
+          <div class="test-code collapse">
+            <pre><code class="hljs javascript small">log.end.call({});<br>util.log.calledWithMatch(<span class="hljs-regexp">/Finished/</span>).should.equal(<span class="hljs-literal">true</span>);</code></pre>
+          </div>
+          <!-- Test Error Stack -->
+        </div>        </div>
+              </div>
+            </div>
+        
+        
+          </div>
+        </section>
+            <section class="suite-wrap">
+          <div id="77fcc2aa-77bd-4e95-b934-9e7a42e6160d" class="suite has-tests has-passed">
+            <h3 class="suite-title">The &#x60;promisify&#x60; function</h3>
+            <h5 class="suite-filename">/test/lib/promisify.js</h5>
+            <!-- Suite Chart -->
+            <div class="suite-chart-wrap">
+              <canvas id="77fcc2aa-77bd-4e95-b934-9e7a42e6160d" class="suite-chart" width="50" height="50" data-total-passes="1" data-total-failures="0" data-total-pending="0" data-total-skipped="0"></canvas>
+            </div>
+            <div class="suite-data-wrap">
+              <!-- Suite Summary -->
+              <ul class="suite-summary list-unstyled">
+                <li class="suite-summary-item duration">0 ms</li>
+                <li class="suite-summary-item tests">1</li>
+                <li class="suite-summary-item passed">1</li>
+                <li class="suite-summary-item failed">0</li>
+                <li class="suite-summary-item pending">0</li>
+              </ul>
+              <!-- Test Info -->
+              <div class="suite-test-wrap">
+                <div class="suite-test-header" data-toggle="collapse" data-target="#77fcc2aa-77bd-4e95-b934-9e7a42e6160d-test-list">
+                  <h4 class="suite-test-header-title">Tests</h4>
+                </div>
+                <div id="77fcc2aa-77bd-4e95-b934-9e7a42e6160d-test-list" class="list-group test-list collapse in">
+                    <div id="87ae30c5-4207-49de-867c-bd480e77592c" class="list-group-item test passed">
+          <!-- Test Heading -->
+          <div class="test-heading">
+            <h4 class="test-title">
+              <span class="text-muted hidden"> it </span>
+              should returned a function
+            </h4>
+            <div class="pull-right">
+              <button class="btn btn-link btn-sm toggle-btn toggle-code collapsed" data-toggle="collapse" data-target="#87ae30c5-4207-49de-867c-bd480e77592c > .test-code.collapse">Code</button>
+              <span class="test-duration fast">0 ms</span>
+            </div>
+          </div>
+          <!-- Test Errors -->
+          <!-- Test Code -->
+          <div class="test-code collapse">
+            <pre><code class="hljs javascript small"><span class="hljs-keyword">var</span> ret = promisify();<br>ret.should.be.of.type(<span class="hljs-string">"function"</span>);</code></pre>
+          </div>
+          <!-- Test Error Stack -->
+        </div>        </div>
+              </div>
+            </div>
+        
+        
+          </div>
+        </section>
+            <section class="suite-wrap">
+          <div id="fcfa4178-84f4-417e-b817-435967c47dcf" class="suite has-tests has-passed">
+            <h3 class="suite-title">The function returned by &#x60;promisify&#x60;</h3>
+            <h5 class="suite-filename">/test/lib/promisify.js</h5>
+            <!-- Suite Chart -->
+            <div class="suite-chart-wrap">
+              <canvas id="fcfa4178-84f4-417e-b817-435967c47dcf" class="suite-chart" width="50" height="50" data-total-passes="2" data-total-failures="0" data-total-pending="0" data-total-skipped="0"></canvas>
+            </div>
+            <div class="suite-data-wrap">
+              <!-- Suite Summary -->
+              <ul class="suite-summary list-unstyled">
+                <li class="suite-summary-item duration">0 ms</li>
+                <li class="suite-summary-item tests">2</li>
+                <li class="suite-summary-item passed">2</li>
+                <li class="suite-summary-item failed">0</li>
+                <li class="suite-summary-item pending">0</li>
+              </ul>
+              <!-- Test Info -->
+              <div class="suite-test-wrap">
+                <div class="suite-test-header" data-toggle="collapse" data-target="#fcfa4178-84f4-417e-b817-435967c47dcf-test-list">
+                  <h4 class="suite-test-header-title">Tests</h4>
+                </div>
+                <div id="fcfa4178-84f4-417e-b817-435967c47dcf-test-list" class="list-group test-list collapse in">
+                    <div id="a08b446e-6ab3-4d32-bd85-6cc93a5b3e22" class="list-group-item test passed">
+          <!-- Test Heading -->
+          <div class="test-heading">
+            <h4 class="test-title">
+              <span class="text-muted hidden"> it </span>
+              should invoke the function supplied to &#x60;promisify&#x60;, when called
+            </h4>
+            <div class="pull-right">
+              <button class="btn btn-link btn-sm toggle-btn toggle-code collapsed" data-toggle="collapse" data-target="#a08b446e-6ab3-4d32-bd85-6cc93a5b3e22 > .test-code.collapse">Code</button>
+              <span class="test-duration fast">0 ms</span>
+            </div>
+          </div>
+          <!-- Test Errors -->
+          <!-- Test Code -->
+          <div class="test-code collapse">
+            <pre><code class="hljs javascript small"><span class="hljs-keyword">var</span> spy = sinon.spy();<br><span class="hljs-keyword">var</span> fn = promisify(spy);<br>fn();<br>spy.called.should.equal(<span class="hljs-literal">true</span>);</code></pre>
+          </div>
+          <!-- Test Error Stack -->
+        </div>            <div id="f3550ee2-2124-4fff-8592-e2596ec862b1" class="list-group-item test passed">
+          <!-- Test Heading -->
+          <div class="test-heading">
+            <h4 class="test-title">
+              <span class="text-muted hidden"> it </span>
+              should return a promise
+            </h4>
+            <div class="pull-right">
+              <button class="btn btn-link btn-sm toggle-btn toggle-code collapsed" data-toggle="collapse" data-target="#f3550ee2-2124-4fff-8592-e2596ec862b1 > .test-code.collapse">Code</button>
+              <span class="test-duration fast">0 ms</span>
+            </div>
+          </div>
+          <!-- Test Errors -->
+          <!-- Test Code -->
+          <div class="test-code collapse">
+            <pre><code class="hljs javascript small"><span class="hljs-keyword">var</span> spy = sinon.spy();<br><span class="hljs-keyword">var</span> fn = promisify(spy);<br><span class="hljs-keyword">var</span> ret = fn();<br>ret.should.be.a.Promise;</code></pre>
+          </div>
+          <!-- Test Error Stack -->
+        </div>        </div>
+              </div>
+            </div>
+        
+        
+          </div>
+        </section>
+            <section class="suite-wrap">
+          <div id="7c67d61c-eca2-4118-accd-dd70f342c5f3" class="suite has-tests has-passed">
+            <h3 class="suite-title">When the supplied function returns a stream, the promise returned by the wrapper</h3>
+            <h5 class="suite-filename">/test/lib/promisify.js</h5>
+            <!-- Suite Chart -->
+            <div class="suite-chart-wrap">
+              <canvas id="7c67d61c-eca2-4118-accd-dd70f342c5f3" class="suite-chart" width="50" height="50" data-total-passes="2" data-total-failures="0" data-total-pending="0" data-total-skipped="0"></canvas>
+            </div>
+            <div class="suite-data-wrap">
+              <!-- Suite Summary -->
+              <ul class="suite-summary list-unstyled">
+                <li class="suite-summary-item duration">2 ms</li>
+                <li class="suite-summary-item tests">2</li>
+                <li class="suite-summary-item passed">2</li>
+                <li class="suite-summary-item failed">0</li>
+                <li class="suite-summary-item pending">0</li>
+              </ul>
+              <!-- Test Info -->
+              <div class="suite-test-wrap">
+                <div class="suite-test-header" data-toggle="collapse" data-target="#7c67d61c-eca2-4118-accd-dd70f342c5f3-test-list">
+                  <h4 class="suite-test-header-title">Tests</h4>
+                </div>
+                <div id="7c67d61c-eca2-4118-accd-dd70f342c5f3-test-list" class="list-group test-list collapse in">
+                    <div id="6899b2bb-6c91-4c95-95bb-cbbd652c5e38" class="list-group-item test passed">
+          <!-- Test Heading -->
+          <div class="test-heading">
+            <h4 class="test-title">
+              <span class="text-muted hidden"> it </span>
+              should be fulfilled when the stream ends
+            </h4>
+            <div class="pull-right">
+              <button class="btn btn-link btn-sm toggle-btn toggle-code collapsed" data-toggle="collapse" data-target="#6899b2bb-6c91-4c95-95bb-cbbd652c5e38 > .test-code.collapse">Code</button>
+              <span class="test-duration fast">1 ms</span>
+            </div>
+          </div>
+          <!-- Test Errors -->
+          <!-- Test Code -->
+          <div class="test-code collapse">
+            <pre><code class="hljs javascript small"><span class="hljs-keyword">var</span> stream = <span class="hljs-keyword">new</span> events.EventEmitter();<br>stream.pipe = <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">noop</span> (<span class="hljs-params"></span>) </span>{};<br><span class="hljs-keyword">var</span> fn = promisify(<span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params"></span>) </span>{<br>    <span class="hljs-keyword">return</span> stream;<br>});<br><span class="hljs-keyword">var</span> ret = fn();<br>stream.emit(<span class="hljs-string">"end"</span>);<br><span class="hljs-keyword">return</span> ret.should.be.fulfilled;</code></pre>
+          </div>
+          <!-- Test Error Stack -->
+        </div>            <div id="626f9b20-3de8-4c74-99cf-009502d3f125" class="list-group-item test passed">
+          <!-- Test Heading -->
+          <div class="test-heading">
+            <h4 class="test-title">
+              <span class="text-muted hidden"> it </span>
+              should be rejected when the stream errors
+            </h4>
+            <div class="pull-right">
+              <button class="btn btn-link btn-sm toggle-btn toggle-code collapsed" data-toggle="collapse" data-target="#626f9b20-3de8-4c74-99cf-009502d3f125 > .test-code.collapse">Code</button>
+              <span class="test-duration fast">1 ms</span>
+            </div>
+          </div>
+          <!-- Test Errors -->
+          <!-- Test Code -->
+          <div class="test-code collapse">
+            <pre><code class="hljs javascript small"><span class="hljs-keyword">var</span> stream = <span class="hljs-keyword">new</span> events.EventEmitter();<br>stream.pipe = <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">noop</span> (<span class="hljs-params"></span>) </span>{};<br><span class="hljs-keyword">var</span> fn = promisify(<span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params"></span>) </span>{<br>    <span class="hljs-keyword">return</span> stream;<br>});<br><span class="hljs-keyword">var</span> ret = fn();<br>stream.emit(<span class="hljs-string">"error"</span>);<br><span class="hljs-keyword">return</span> ret.should.be.rejected;</code></pre>
+          </div>
+          <!-- Test Error Stack -->
+        </div>        </div>
+              </div>
+            </div>
+        
+        
+          </div>
+        </section>
+            <section class="suite-wrap">
+          <div id="11218c5c-0197-4816-9092-c65ebe3d4be3" class="suite has-tests has-passed">
+            <h3 class="suite-title">When the supplied function returns a promise, the promise returned by the wrapper</h3>
+            <h5 class="suite-filename">/test/lib/promisify.js</h5>
+            <!-- Suite Chart -->
+            <div class="suite-chart-wrap">
+              <canvas id="11218c5c-0197-4816-9092-c65ebe3d4be3" class="suite-chart" width="50" height="50" data-total-passes="1" data-total-failures="0" data-total-pending="0" data-total-skipped="0"></canvas>
+            </div>
+            <div class="suite-data-wrap">
+              <!-- Suite Summary -->
+              <ul class="suite-summary list-unstyled">
+                <li class="suite-summary-item duration">0 ms</li>
+                <li class="suite-summary-item tests">1</li>
+                <li class="suite-summary-item passed">1</li>
+                <li class="suite-summary-item failed">0</li>
+                <li class="suite-summary-item pending">0</li>
+              </ul>
+              <!-- Test Info -->
+              <div class="suite-test-wrap">
+                <div class="suite-test-header" data-toggle="collapse" data-target="#11218c5c-0197-4816-9092-c65ebe3d4be3-test-list">
+                  <h4 class="suite-test-header-title">Tests</h4>
+                </div>
+                <div id="11218c5c-0197-4816-9092-c65ebe3d4be3-test-list" class="list-group test-list collapse in">
+                    <div id="53854c46-df81-403b-acff-f7a1cee66a32" class="list-group-item test passed">
+          <!-- Test Heading -->
+          <div class="test-heading">
+            <h4 class="test-title">
+              <span class="text-muted hidden"> it </span>
+              should be the same promise proxied through
+            </h4>
+            <div class="pull-right">
+              <button class="btn btn-link btn-sm toggle-btn toggle-code collapsed" data-toggle="collapse" data-target="#53854c46-df81-403b-acff-f7a1cee66a32 > .test-code.collapse">Code</button>
+              <span class="test-duration fast">0 ms</span>
+            </div>
+          </div>
+          <!-- Test Errors -->
+          <!-- Test Code -->
+          <div class="test-code collapse">
+            <pre><code class="hljs javascript small"><span class="hljs-keyword">var</span> promise = BPromise.resolve();<br><span class="hljs-keyword">var</span> fn = promisify(<span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params"></span>) </span>{<br>    <span class="hljs-keyword">return</span> promise;<br>});<br><span class="hljs-keyword">var</span> ret = fn();<br>ret.should.equal(promise);</code></pre>
+          </div>
+          <!-- Test Error Stack -->
+        </div>        </div>
+              </div>
+            </div>
+        
+        
+          </div>
+        </section>
+            <section class="suite-wrap">
+          <div id="b71a1bd2-4267-48b7-a489-5ddf03ba6f9a" class="suite has-tests has-passed">
+            <h3 class="suite-title">When the supplied function returns a value, the promise returned by the wrapper</h3>
+            <h5 class="suite-filename">/test/lib/promisify.js</h5>
+            <!-- Suite Chart -->
+            <div class="suite-chart-wrap">
+              <canvas id="b71a1bd2-4267-48b7-a489-5ddf03ba6f9a" class="suite-chart" width="50" height="50" data-total-passes="1" data-total-failures="0" data-total-pending="0" data-total-skipped="0"></canvas>
+            </div>
+            <div class="suite-data-wrap">
+              <!-- Suite Summary -->
+              <ul class="suite-summary list-unstyled">
+                <li class="suite-summary-item duration">1 ms</li>
+                <li class="suite-summary-item tests">1</li>
+                <li class="suite-summary-item passed">1</li>
+                <li class="suite-summary-item failed">0</li>
+                <li class="suite-summary-item pending">0</li>
+              </ul>
+              <!-- Test Info -->
+              <div class="suite-test-wrap">
+                <div class="suite-test-header" data-toggle="collapse" data-target="#b71a1bd2-4267-48b7-a489-5ddf03ba6f9a-test-list">
+                  <h4 class="suite-test-header-title">Tests</h4>
+                </div>
+                <div id="b71a1bd2-4267-48b7-a489-5ddf03ba6f9a-test-list" class="list-group test-list collapse in">
+                    <div id="974825f3-dd1e-42c2-9821-0095c1587a3b" class="list-group-item test passed">
+          <!-- Test Heading -->
+          <div class="test-heading">
+            <h4 class="test-title">
+              <span class="text-muted hidden"> it </span>
+              should be a promise wrapper around that value
+            </h4>
+            <div class="pull-right">
+              <button class="btn btn-link btn-sm toggle-btn toggle-code collapsed" data-toggle="collapse" data-target="#974825f3-dd1e-42c2-9821-0095c1587a3b > .test-code.collapse">Code</button>
+              <span class="test-duration fast">1 ms</span>
+            </div>
+          </div>
+          <!-- Test Errors -->
+          <!-- Test Code -->
+          <div class="test-code collapse">
+            <pre><code class="hljs javascript small"><span class="hljs-keyword">var</span> value = {};<br><span class="hljs-keyword">var</span> fn = promisify(<span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params"></span>) </span>{<br>    <span class="hljs-keyword">return</span> value;<br>});<br><span class="hljs-keyword">var</span> ret = fn();<br><span class="hljs-keyword">return</span> ret.should.eventually.equal(value);</code></pre>
+          </div>
+          <!-- Test Error Stack -->
+        </div>        </div>
+              </div>
+            </div>
+        
+        
+          </div>
+        </section>
+            <section class="suite-wrap">
+          <div id="1c0a6a13-8d17-4963-89fe-75a97983c2e9" class="suite has-tests has-passed">
+            <h3 class="suite-title">When the supplied function throws, the wrapper</h3>
+            <h5 class="suite-filename">/test/lib/promisify.js</h5>
+            <!-- Suite Chart -->
+            <div class="suite-chart-wrap">
+              <canvas id="1c0a6a13-8d17-4963-89fe-75a97983c2e9" class="suite-chart" width="50" height="50" data-total-passes="1" data-total-failures="0" data-total-pending="0" data-total-skipped="0"></canvas>
+            </div>
+            <div class="suite-data-wrap">
+              <!-- Suite Summary -->
+              <ul class="suite-summary list-unstyled">
+                <li class="suite-summary-item duration">1 ms</li>
+                <li class="suite-summary-item tests">1</li>
+                <li class="suite-summary-item passed">1</li>
+                <li class="suite-summary-item failed">0</li>
+                <li class="suite-summary-item pending">0</li>
+              </ul>
+              <!-- Test Info -->
+              <div class="suite-test-wrap">
+                <div class="suite-test-header" data-toggle="collapse" data-target="#1c0a6a13-8d17-4963-89fe-75a97983c2e9-test-list">
+                  <h4 class="suite-test-header-title">Tests</h4>
+                </div>
+                <div id="1c0a6a13-8d17-4963-89fe-75a97983c2e9-test-list" class="list-group test-list collapse in">
+                    <div id="368cfaab-502c-4b81-a87b-aa0f276bbd5a" class="list-group-item test passed">
+          <!-- Test Heading -->
+          <div class="test-heading">
+            <h4 class="test-title">
+              <span class="text-muted hidden"> it </span>
+              should throw
+            </h4>
+            <div class="pull-right">
+              <button class="btn btn-link btn-sm toggle-btn toggle-code collapsed" data-toggle="collapse" data-target="#368cfaab-502c-4b81-a87b-aa0f276bbd5a > .test-code.collapse">Code</button>
+              <span class="test-duration fast">1 ms</span>
+            </div>
+          </div>
+          <!-- Test Errors -->
+          <!-- Test Code -->
+          <div class="test-code collapse">
+            <pre><code class="hljs javascript small"><span class="hljs-keyword">var</span> error = <span class="hljs-keyword">new</span> <span class="hljs-built_in">Error</span>();<br><span class="hljs-keyword">var</span> fn = promisify(<span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params"></span>) </span>{<br>    <span class="hljs-keyword">throw</span> error;<br>});<br>fn.should.throw(error);</code></pre>
+          </div>
+          <!-- Test Error Stack -->
+        </div>        </div>
+              </div>
+            </div>
+        
+        
+          </div>
+        </section>
+    </div>
+
+    <footer>
+      <div class="container">
+        <p>Report generated by <a href="http://adamgruber.github.io/mochawesome/" target="_blank">mochawesome</a>.<br>Designed and built by <a href="https://github.com/adamgruber" target="_blank">adamgruber</a>. &copy;2015.</p>
+      </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="js/vendor.js"></script>
+    <script src="js/mochawesome.js"></script>
+  </body>
+</html>
