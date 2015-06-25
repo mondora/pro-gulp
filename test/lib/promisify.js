@@ -41,7 +41,7 @@ describe("When the supplied function returns a stream, the promise returned by t
             return stream;
         });
         var ret = fn();
-        stream.emit("end");
+        stream.emit("finish");
         return ret.should.be.fulfilled;
     });
 
