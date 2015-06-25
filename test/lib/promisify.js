@@ -34,7 +34,7 @@ describe("The function returned by `promisify`", function () {
 
 describe("When the supplied function returns a stream, the promise returned by the wrapper", function () {
 
-    it("should be fulfilled when the stream ends", function () {
+    it("should be fulfilled when the stream finishes", function () {
         var stream = new events.EventEmitter();
         stream.pipe = function noop () {};
         var fn = promisify(function () {
@@ -42,6 +42,17 @@ describe("When the supplied function returns a stream, the promise returned by t
         });
         var ret = fn();
         stream.emit("finish");
+        return ret.should.be.fulfilled;
+    });
+
+    it("should be fulfilled when the stream ends", function () {
+        var stream = new events.EventEmitter();
+        stream.pipe = function noop () {};
+        var fn = promisify(function () {
+            return stream;
+        });
+        var ret = fn();
+        stream.emit("end");
         return ret.should.be.fulfilled;
     });
 

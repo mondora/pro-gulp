@@ -24,7 +24,10 @@ module.exports = function promisify (fn) {
         }
         if (isStream(ret)) {
             return new BPromise(function (resolve, reject) {
-                ret.on("finish", resolve).on("error", reject);
+                ret
+                    .on("end", resolve)
+                    .on("finish", resolve)
+                    .on("error", reject);
             });
         }
         return BPromise.resolve(ret);
