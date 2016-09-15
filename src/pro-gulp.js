@@ -13,7 +13,8 @@ exports.task = function task (name, dependency, fn) {
                 .then(log.start)
                 .then(promisify(dependency))
                 .then(promisify(fn || function noop () {}))
-                .then(log.end);
+                .then(log.end)
+                .catch(log.error);
         };
     }
     return tasks[name];

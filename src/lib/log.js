@@ -13,7 +13,7 @@ exports.start = function start () {
     ].join(""));
 };
 
-exports.end = function start () {
+exports.end = function end () {
     this.end = new Date();
     util.log([
         "Finished '",
@@ -21,5 +21,14 @@ exports.end = function start () {
         "' after ",
         util.colors.magenta(execTimeString(this.end - this.start)),
         "s"
+    ].join(""));
+};
+
+exports.error = function error (err) {
+    util.log([
+        "Terminated '",
+        util.colors.cyan(this.name),
+        "' with error: ",
+        util.colors.red(err)
     ].join(""));
 };

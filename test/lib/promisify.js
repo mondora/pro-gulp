@@ -90,20 +90,21 @@ describe("When the supplied function returns a value, the promise returned by th
             return value;
         });
         var ret = fn();
-        return ret.should.eventually.equal(value);
+        return ret.should.fulfilledWith(value);
     });
 
 });
 
 
-describe("When the supplied function throws, the wrapper", function () {
+describe("When the supplied function throws, the promise returned by the wrapper", function () {
 
-    it("should throw", function () {
+    it("should be a promise that is rejected with the thrown error", function () {
         var error = new Error();
         var fn = promisify(function () {
             throw error;
         });
-        fn.should.throw(error);
+        var ret = fn();
+        ret.should.rejectedWith(error);
     });
 
 });
