@@ -52,3 +52,20 @@ describe("The `log.end` function", function () {
 
 
 });
+
+describe("The `log.error` function", function () {
+
+    beforeEach(function () {
+        sinon.stub(util, "log");
+    });
+
+    afterEach(function () {
+        util.log.restore();
+    });
+
+    it("should call the `gulp-util.log` function", function () {
+        log.error.call({});
+        util.log.calledWithMatch(/Terminated/).should.equal(true);
+    });
+
+});

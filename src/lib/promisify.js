@@ -18,7 +18,12 @@ var isPromise = function (thing) {
 
 module.exports = function promisify (fn) {
     return function promisifyWrapper (/* arguments */) {
-        var ret = fn();
+        var ret;
+        try {
+            ret = fn();
+        } catch (err) {
+            return BPromise.reject(err);
+        }
         if (isPromise(ret)) {
             return ret;
         }
