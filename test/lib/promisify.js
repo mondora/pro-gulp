@@ -62,7 +62,7 @@ it("should be rejected when the stream errors", function() {
     var fn = promisify(function() {
         return stream;
     });
-    var ret = fn().catch(err => {
+    var ret = fn().catch(function(err) {
         /*donothing*/
     });
     stream.emit("error");
